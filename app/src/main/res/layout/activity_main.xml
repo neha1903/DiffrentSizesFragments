@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/dp10"
+        android:elevation="10dp"
+        app:tabIndicatorColor="@color/sky_blue"
+        app:tabIndicatorFullWidth="true"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextAppearance="@style/CustomTabText"
+        app:tabTextColor="@color/black" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp200" />
+
+    <Button
+        android:id="@+id/enroll_btn"
+        style="@style/RedButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/dp30"
+        android:background="@drawable/background_btn_red"
+        android:text="@string/button"
+        android:textAllCaps="false" />
+
+</LinearLayout>
